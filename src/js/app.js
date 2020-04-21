@@ -3,7 +3,7 @@ $(document)
 
     function imgs() {
         let acomulador;
-        for (let i = 1; i <= 196; i++) {
+        for (let i = 1; i <= 262; i++) {
             acomulador = `
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                   <a class="thumbnail" href="src/img/img (${i}).JPG" data-toggle="modal" data-target="#exampleModal${i}">
