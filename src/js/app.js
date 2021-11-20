@@ -5,8 +5,9 @@ $(document)
         let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;
        window.addEventListener('error',function(e){
         console.log(e);
-        console.error(e.target.src);
+        console.log(e.target.src);
        });
+       return rutaImg;
         
     }
     function imgs() {
