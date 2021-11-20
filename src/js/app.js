@@ -1,9 +1,13 @@
 $(document)
   .ready(function () {
     function obtenerRutaImg(i){
-        let ext =".jpg" || ".JPG";
-        let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;;
-        return rutaImg;
+        let ext =".jpg";
+        let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;
+       window.addEventListener('error',function(e){
+        console.log(e);
+        console.error(e.target.src);
+       });
+        
     }
     function imgs() {
         let acomulador;
