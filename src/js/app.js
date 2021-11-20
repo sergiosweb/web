@@ -1,13 +1,13 @@
 $(document)
   .ready(function () {
     function obtenerRutaImg(i){
-        let ext =".jpg";
-        let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;
+        //let ext =".jpg" || ".JPG";
+        //let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;
        window.addEventListener('error',function(e){
         console.log(e);
         console.log(e.target.src);
        });
-       return rutaImg;
+       return self.location.href+`/img (${i}).jpg`;
         
     }
     function imgs() {
