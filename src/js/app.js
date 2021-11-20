@@ -6,7 +6,7 @@ $(document)
        window.addEventListener('error',function(e){
         console.log(e);
         console.log(e.target.src);
-        return self.location.href+`/img (${i}).JPG`;
+        //return self.location.href+`/img (${i}).JPG`;
        });
        return self.location.href+`/img (${i}).jpg`;
         
