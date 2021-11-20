@@ -3,12 +3,12 @@ $(document)
     function obtenerRutaImg(i){
         //let ext =".jpg" || ".JPG";
         //let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;
-       window.addEventListener('error',function(e){
+      /* window.addEventListener('error',function(e){
         console.log(e);
         console.log(e.target.src);
         //return self.location.href+`/img (${i}).JPG`;
-       });
-       return self.location.href+`/img (${i}).jpg`;
+       });*/
+       return self.location.href+`img (${i}).jpg`;
         
     }
     function imgs() {
