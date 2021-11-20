@@ -1,10 +1,39 @@
 $(document)
   .ready(function () {
-
+    function obtenerRutaImg(i){
+        let ext =".jpg" || ".JPG";
+        let rutaImg = self.location.href+ `/src/img/img (${i})${ext}`;;
+        return rutaImg;
+    }
     function imgs() {
         let acomulador;
         for (let i = 1; i <= 419; i++) {
-                acomulador = `
+            //obtenerRutaImg(i);
+            acomulador = `
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="${obtenerRutaImg(i)}" data-toggle="modal" data-target="#exampleModal${i}">
+                      <img class="img-thumbnail"
+                           src="${obtenerRutaImg(i)}">
+                  </a>
+              </div>
+              <div class="modal fade" id="exampleModal${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    <img class="img-thumbnail"
+                    src="${obtenerRutaImg(i)}">
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+            `+ acomulador
+                /*acomulador = `
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                   <a class="thumbnail" href="src/img/img (${i}).jpg" data-toggle="modal" data-target="#exampleModal${i}">
                       <img class="img-thumbnail"
@@ -27,7 +56,7 @@ $(document)
                 </div>
                 </div>
             
-            `+ acomulador
+            `+ acomulador*/
         }
         document.getElementById("img-repeat").innerHTML = acomulador
     }
