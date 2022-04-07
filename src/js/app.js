@@ -13,7 +13,7 @@ $(document)
     }
     function imgs() {
         let acomulador;
-        for (let i = 1; i <= 419; i++) {
+        for (let i = 1; i <= 463; i++) {
             //obtenerRutaImg(i);
             acomulador = `
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
